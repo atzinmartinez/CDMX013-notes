@@ -19,7 +19,7 @@ export default function Login() {
         <img src={titulo} className="titulo" alt='notme!' />
         <img src={google} className="google" alt='google' />
         <button className='login' onClick={()=>{googleEvent()} }> Entrar con google </button>
-<img src={linea} className="linea" alt='google' />
+<img src={linea} className="linea" alt='google'/>
 
         {/* <img src={fondo} className='papel' alt="fondo"></img> */}
 

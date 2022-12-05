@@ -22,8 +22,8 @@ useEffect (()=>{
 const [user, setUser] = useState (null);
   return (
     <div >
-     {/* <Login/> */}
-     <Home/>
+     <Login/>
+     {/* <Home/> */}
      {/* <Firstscreen/> */}
      {/*user?<Route path="/" element={<Home/>} />: <Route path"/" element ={<Login setUser ={setUser}/>}/> */}
      
