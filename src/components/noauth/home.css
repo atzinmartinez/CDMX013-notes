@@ -1,0 +1,39 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.descripcion{
+  position: absolute;
+  width: 549px;
+  height: 77px;
+  left: 142px;
+  top: 138px;
+  
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  
+  /* identical to box height */
+  
+  color: #F7F7F7;
+
+}
+
+.new{
+  position: relative;
+  width: 359.19px;
+  height: 359.19px;
+  left: 236px;
+  top: 400px;
+}
+
+.logout{
+  position: relative;
+  width: 89px;
+  height: 89px;
+  left: -316px;
+  top: -229px;
+}

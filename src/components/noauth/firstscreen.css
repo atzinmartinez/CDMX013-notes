@@ -1,0 +1,68 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.fondo{
+  background-color: rgb(127, 127, 127);
+  position: absolute;
+  width: 834px;
+  height: 1194px;
+  z-index: 0;
+}
+
+.notasCreadas{
+  position: absolute;
+width: 420px;
+height: 77px;
+left: 218px;
+margin-top: 150px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 66px;
+line-height: 77px;
+
+/* identical to box height */
+
+color: #F7F7F7;
+}
+
+.note{
+  position: absolute;
+  width: 469px;
+  height: 427px;
+  margin-top: 600px;
+  width: 450px;
+  height: 400px;
+}
+
+.atras{
+  position: absolute;
+width: 90px;
+height: 90px;
+left: 50px;
+top: 49px;
+
+
+}
+
+.note2{
+  position: absolute;
+  width: 469px;
+  height: 427px;
+  margin-top: 250px;
+  margin-left: 350px;
+  width: 450px;
+  height: 400px;
+}
+
+.note3{
+  position: absolute;
+  width: 469px;
+  height: 427px;
+  margin-top: 250px;
+  width: 450px;
+  height: 400px;
+}

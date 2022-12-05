@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react'
+import { collection, getDocs } from 'firebase/firestore'
+import db from './firebase/config'
+import Login from './components/noauth/Login.js'
+import Home from './components/noauth/Home.js'
+import Firstscreen from './components/noauth/Firstscreen.js'
+
+
+
+//rutas van aquí
 
 function App() {
+
+useEffect (()=>{
+  const getData = async ()=>{
+    const saveData = await getDocs (collection(db, "users"));
+    console.log(saveData);
+  }
+  getData();
+},[]);
+
+const [user, setUser] = useState (null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     {/* <Login/> */}
+     <Home/>
+     {/* <Firstscreen/> */}
+     {/*user?<Route path="/" element={<Home/>} />: <Route path"/" element ={<Login setUser ={setUser}/>}/> */}
+     
     </div>
   );
 }
