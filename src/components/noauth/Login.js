@@ -7,7 +7,7 @@ import { googleAuth } from '../../firebase/google'
 
 export default function Login() {
   const googleEvent = () => {
-    googleAuth();
+    googleAuth(true);
     console.log("Se puede entrar");
   }
   // const img = require.context('../../img', true)
@@ -17,8 +17,8 @@ export default function Login() {
       <div className='fondo'>
         <h1 className='descripcion'>Todas tus notas en un solo lugar</h1>
         <img src={titulo} className="titulo" alt='notme!' />
-        <img src={google} className="google" alt='google' />
-        <button className='login' onClick={()=>{googleEvent()} }> Entrar con google </button>
+        <img src={google} className="google" alt='google' onClick={()=>{googleEvent()} } />
+      
 <img src={linea} className="linea" alt='google'/>
 
         {/* <img src={fondo} className='papel' alt="fondo"></img> */}

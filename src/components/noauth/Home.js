@@ -15,9 +15,9 @@ export default function Home () {
       <div className='fondo'>
     <h2 className='descripcion'>Crea tu primer nota </h2>
 
-    <button className='exit' onClick={()=>{exit()} }> Adios </button>
+    <button className='exit' > Adios </button>
     <img src={crear} className='new' alt='crear'/>
-    <img src={logout} className='logout' alt='crear'/>
+    <img src={logout} className='logout' alt='crear' onClick={()=>{exit()} }/>
 
    
 </div>
