@@ -11,12 +11,12 @@
   z-index: 0;
 }
 
-.notasCreadas{
+.escribe{
   position: absolute;
-width: 420px;
+width: 800px;
 height: 77px;
-left: 218px;
-margin-top: 150px;
+left: 150px;
+margin-top: 180px;
 
 font-family: 'Lato';
 font-style: normal;
@@ -31,11 +31,10 @@ color: #F7F7F7;
 
 .note{
   position: absolute;
-  width: 469px;
-  height: 427px;
-  margin-top: 600px;
-  width: 450px;
-  height: 400px;
+  margin-top: 300px;
+  width: 750px;
+  height: 700px;
+  margin-left: 20px;
 }
 
 .atras{

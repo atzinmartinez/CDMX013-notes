@@ -13,7 +13,7 @@ export default function Login(props) {
     const googleIn = googleAuth();
     googleIn.then((user) => {
       setUser(user);
-      navigate("/Home")
+      navigate("/home")
     }).catch((error) => {
       console.log(error)
     })

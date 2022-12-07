@@ -7,41 +7,32 @@ import { useNavigate } from 'react-router-dom'
 export default function Home (props) {
   
 const exitApp = props.logOut;
-const navigate = useNavigate ()
+const navigate = useNavigate ();
 
 
   const exit = async () => {
-    await logOutFireBase ( exitApp())
-    navigate("/Login")
+    await logOutFireBase ()
+    exitApp();
+    navigate("/")
     console.log("Salida");
   }
-  
+
+  const newNote =() => {
+    navigate("/firstscreen")
+    console.log("Nueva nota");
+  }
+
   return (
     <div  className='background'> 
       <div className='fondo'>
     <h2 className='descripcion'>Crea tu primer nota </h2>
 
-    <img src={crear} className='new' alt='crear'/>
-    <img src={logout} className='logout' alt='crear' onClick={()=>{exit()} }/>
+    <img src={crear} className='new' alt='crear' onClick={()=>{newNote()} }/>
+    <img src={logout} className='logout' alt='exit' onClick={()=>{exit()} }/>
 
-   
 </div>
-
-     
      </div>
   )
 }
-const exit = logOutFireBase ();
-exit.then ((user)=>{
-  setUser(user);
-  navigate("/Home")
-})
 
-const googleIn = googleAuth();
-googleIn.then((user) => {
-  setUser(user);
-  navigate("/Home")
-}).catch((error) => {
-  console.log(error)
-})
 

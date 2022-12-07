@@ -4,9 +4,9 @@ import {Routes, Route} from 'react-router-dom'
 import db from './firebase/config'
 import Login from './components/noauth/Login.js'
 import Home from './components/noauth/Home.js'
-
+import NotFound from './views/404'
+import Firstscreen from './components/noauth/Firstscreen'
 //rutas van aquí
-
 function App() {
 useEffect (()=>{
   const getData = async ()=>{
@@ -19,15 +19,16 @@ useEffect (()=>{
 function setUserNull() {
   setUser(null)
 }
-
   return (
     <Routes>
+      <Route path='/' element={<Login setUser={setUser} />}/>
+      <Route path="/home" element={user ? <Home logOut={setUserNull} /> : <Login setUser={setUser} />} />
+      <Route path="*" element={<NotFound />}/>
+      <Route path="/firstscreen" element={<Firstscreen/>}/>
 
-      <Route path="/" element={user ? <Home logOut={setUserNull} /> : <Login setUser={setUser} />} />
-      <Route path='/' element={<Login/>}/>
-      <Route path='/home' element={<Home/>}/>
+
+
      </Routes>
-       
   );
 }
 
