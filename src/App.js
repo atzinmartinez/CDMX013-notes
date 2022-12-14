@@ -6,6 +6,7 @@ import Login from './components/noauth/Login.js'
 import Home from './components/noauth/Home.js'
 import NotFound from './views/404'
 import Firstscreen from './components/noauth/Firstscreen'
+import Notes from './components/noauth/notedb'
 //rutas van aquí
 function App() {
 useEffect (()=>{
@@ -25,6 +26,8 @@ function setUserNull() {
       <Route path="/home" element={user ? <Home logOut={setUserNull} /> : <Login setUser={setUser} />} />
       <Route path="*" element={<NotFound />}/>
       <Route path="/firstscreen" element={<Firstscreen/>}/>
+      <Route path="/notes" element={<Notes/>}/>
+      
 
 
 
