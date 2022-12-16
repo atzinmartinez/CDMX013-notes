@@ -1,4 +1,4 @@
-import './home.css'
+import './notedb.css'
 import logout from '../../img/logout.png'
 import atras from '../../img/atras.png'
 import { logOutFireBase } from '../../firebase/google'
@@ -46,14 +46,13 @@ getList();
   return (
     <div  className='background'> 
       <div className='fondo'>
-    <h2 className='descripcion'>Tus notas</h2>
+    <h2 className='notas_creadas'>Notas Creadas</h2>
     <img src={logout} className='logout' alt='exit' onClick={()=>{exit()} }/>
     <img src={atras} className='atras' alt='atras' onClick={() => { back() }} />
 
     <div className='contenedorPadre'>{list.map((list)=>(
       <div className='cadaNota' key={list.id}>
         <p> {list.escribir} </p>
-        <button></button>
       </div>
     ))}
 

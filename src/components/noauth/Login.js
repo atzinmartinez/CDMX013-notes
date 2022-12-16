@@ -2,6 +2,7 @@ import './login.css'
 import titulo from '../../img/titulo.png'
 import google from '../../img/google.png'
 import linea from '../../img/linea.png'
+import h1 from '../../img/h1.png'
 import { useNavigate } from 'react-router-dom'
 import { googleAuth } from '../../firebase/google'
 
@@ -23,7 +24,7 @@ export default function Login(props) {
   return (
     <div className='background'>
       <div className='fondo'>
-        <h1 className='descripcion'>Todas tus notas en un solo lugar</h1>
+      <img src={h1} className="h1" alt='todas tus notas en un solo lugar' />
         <img src={titulo} className="titulo" alt='notme!' />
         <img src={google} className="google" alt='google' onClick={() => { googleEvent() }} />
 

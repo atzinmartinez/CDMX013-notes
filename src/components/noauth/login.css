@@ -15,7 +15,7 @@
 .titulo{
 position: absolute;
 left: 103px;
-top: 275px;
+top: 250px;
 font-family: 'Reenie Beanie';
 font-style: normal;
 font-weight: 500;
@@ -32,24 +32,13 @@ top: 751px;
 }
 
 
-h1{
-  
-position: absolute;
-width: 674px;
-height: 58px;
-left: 80px;
-top: 582px;
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 58px;
-
-/* identical to box height */
-
-color: #F2E7D5;
+.h1{
+  position: absolute;
+  width: 674px;
+  margin-top: 605px;
+  margin-left: 95px;
 }
+
 .linea{
   position: absolute;
 width: 650px;

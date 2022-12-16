@@ -1,0 +1,25 @@
+.notas_creadas{
+position: absolute;
+height: 77px;
+margin-left: 211px;
+top: 171px;
+font-family: 'Lato';
+font-weight: 500;
+font-size: 64px;
+line-height: 77px;
+color: #F7F7F7;
+}
+.contenedorPadre{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  gap: 0px;
+  height: 100%;
+}
+.cadaNota{
+  border: solid;
+border-color: aqua;
+font-family: 'Lato', sans-serif;
+
+}

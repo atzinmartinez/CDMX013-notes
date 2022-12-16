@@ -42,16 +42,17 @@ export default function AddNota() {
         <h2 className='escribe'>Escribe tus apuntes</h2>
         <img src={note} className='note' alt='note' />
         <form onSubmit={saveNoteFirebase}>
-          <label htmlFor="nota">Escribe tu nota:</label>
-          <input onChange={capturarInputs} className='input' type="text" id="nota" name="escribir" value={user.escribir} />
-          <button>Guardar</button>
+          <label htmlFor="nota"></label>
+          <textarea className='input' placeholder="Escribe tu nota aquí" onChange={capturarInputs}  type="text" id="nota" name="escribir" value={user.escribir} />
+          {/* <text className='titulo' type="text" id="nota" name="escribir" value={user.escribir}></text> preguntar como se pone el titulo */}
+          <button className='button' >Guardar</button>
 
         </form>
 
 
 
 
-        <img src={atras} className='atras' alt='atras' onClick={() => { back() }} />
+        <img className='img' src={atras} className='atras' alt='atras' onClick={() => { back() }} />
 
       </div>
 
